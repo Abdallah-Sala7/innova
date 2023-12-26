@@ -10,12 +10,12 @@ const ToolsCard = ({img, name}) => {
       <Image
         src={img}
         alt={name}
-        width={500}
-        height={500}
+        width={40}
+        height={40}
         className="w-10 h-10 object-contain"
       />
 
-      <h3 className="text-dark font-bold text-title-16 capitalize">{name}</h3>
+      <h3 className="text-dark font-bold capitalize text-title-16-14">{name}</h3>
     </div>
   );
 }

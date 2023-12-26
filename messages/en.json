@@ -194,13 +194,13 @@
   "meta": {
     "title": "Innova Tech",
     "description": "We are a team of professional designers and developers who are passionate about what we do and are always ready to provide the best services to our customers",
-    "keywords": [
-      "web development",
-      "mobile development",
-      "e-commerce",
-      "design",
-      "marketing"
-    ],
+    "keywords": {
+      "0": "web development",
+      "1": "mobile development",
+      "2": "e-commerce",
+      "3": "design",
+      "4": "marketing"
+    },
     "about": "About us",
     "contact": "Contact us",
     "services": "Services",

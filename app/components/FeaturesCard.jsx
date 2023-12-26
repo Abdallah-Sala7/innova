@@ -11,8 +11,8 @@ const FeaturesCard = ({ img, color, title, desc }) => {
           <Image
             src={img}
             alt="security"
-            width={500}
-            height={500}
+            width={35}
+            height={35}
             className="w-8 h-8 object-contain"
           />
 

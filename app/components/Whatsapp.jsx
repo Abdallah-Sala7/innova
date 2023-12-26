@@ -6,6 +6,7 @@ const Whatsapp = () => {
       [ after:absolute after:w-full after:h-full after:border after:border-green-500 after:rounded-full after:pointer-events-none after:animate-ping hover:after:animate-none ]"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="whatsapp"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

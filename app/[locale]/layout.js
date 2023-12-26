@@ -37,7 +37,13 @@ export async function generateMetadata() {
     themeColor: "#37bff1",
     applicationName: "Innova Tech",
     metadataBase: new URL("https://www.innovatech.com"),
-    keywords: t("keywords"),
+    keywords: [
+      t("keywords.0"),
+      t("keywords.1"),
+      t("keywords.2"),
+      t("keywords.3"),
+      t("keywords.4"),
+    ],
     alternates: {
       canonical: "/",
       languages: {

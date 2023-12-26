@@ -18,7 +18,7 @@ export default function LanguageChanger() {
   return (
     <button
       onClick={handleChange}
-      className="w-10 h-10 flex items-center justify-center"
+      className="w-8 h-w-8 flex items-center justify-center sm:w-9 sm:h-9"
     >
       <Image
         src={`/images/flags/${locale}.png`}
