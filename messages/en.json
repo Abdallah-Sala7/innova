@@ -1,0 +1,209 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About us",
+    "contact": "Contact us",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "footer": {
+      "title": "Innova Tech",
+      "description": "We are distinguished in the field of design and development with innovative solutions that we provide to make our projects of the highest degree of efficiency and quality",
+      "links": {
+        "title": "Quick Links",
+        "home": "Home",
+        "about": "About us",
+        "contact": "Contact us",
+        "services": "Services",
+        "portfolio": "Portfolio"
+      },
+      "services": {
+        "title": "Our Services",
+        "web": "Web Development",
+        "mobile": "Mobile Development",
+        "commerce": "E-Commerce",
+        "design": "Design",
+        "marketing": "Marketing"
+      },
+      "social-links": "Social Links"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "We Can Make Your Ideas A",
+      "title-highlight": "Reality",
+      "desc": "We turn your ideas into reality. Participate with us to make your project digital through innovation and technology.",
+      "action": "Get Started"
+    },
+    "features": {
+      "title": "Why Choose Us?",
+      "desc": "Designing your project with us will certainly be creative, different and the reason why you are at the top of your business.",
+      "cards": {
+        "security": {
+          "title": "security",
+          "desc": "We strive to provide innovative and effective technological solutions to our customers, where we care about their security and follow the highest security standards to protect their data."
+        },
+        "speed": {
+          "title": "Speed",
+          "desc": "Technology can help improve businesses. Therefore, we are committed to providing fast and efficient services to our customers to meet their needs as quickly as possible."
+        },
+        "innovative": {
+          "title": "innovative solutions",
+          "desc": "We are distinguished in the field of design and development with innovative solutions that we provide to make our projects of the highest degree of efficiency and quality"
+        },
+        "support": {
+          "title": "technical support",
+          "desc": "Always ready to serve our customers and answer all questions and inquiries as quickly as possible"
+        }
+      }
+    },
+    "services": {
+      "title": "Discover Our Services",
+      "desc": "We provide our customers with the best services in the field of design and development of websites, mobile applications and electronic stores",
+      "cards": {
+        "web": {
+          "title": "Web Development",
+          "desc": "We provide professional and distinguished web development services to our customers to achieve their goals and meet their needs"
+        },
+        "mobile": {
+          "title": "Mobile Development",
+          "desc": "We provide professional and distinguished mobile development services to our customers to achieve their goals and meet their needs"
+        },
+        "commerce": {
+          "title": "E-Commerce",
+          "desc": "We provide professional and distinguished e-commerce services to our customers to achieve their goals and meet their needs"
+        }
+      }
+    },
+    "projects": {
+      "title": "Our Latest Projects",
+      "desc": "We have designed and developed many projects for our customers, and we are proud of the results we have achieved"
+    },
+    "about": {
+      "title": "About Us",
+      "desc1": "We are a team of professional designers and developers who are passionate about what we do and are always ready to provide the best services to our customers",
+      "desc2": "We are a team of professional designers and developers who are passionate about what we do and are always ready to provide the best services to our customers",
+      "action": "Contact Us"
+    },
+    "tools": {
+      "title": "Technologies and Tools",
+      "desc": "We use the latest technologies and tools in the field of design and development to provide the best services to our customers",
+      "design": "Design",
+      "web": "Web Development",
+      "mobile": "Mobile Applications",
+      "backend": "Backend Development"
+    },
+    "plans": {
+      "title": "Our Plans",
+      "desc": "We provide professional and distinguished web development services to our customers to achieve their goals and meet their needs",
+      "best": "Best Value",
+      "basic": {
+        "title": "Basic Plan",
+        "desc": "We provide professional and distinguished web development services to our customers to achieve their goals and meet their needs",
+        "price": "1299",
+        "oldPrice": "1500",
+        "saving": "14",
+        "save": "Save",
+        "currency": "SAR",
+        "features": {
+          "feature1": "Responsive Design",
+          "feature2": "Website",
+          "feature3": "Hosting",
+          "feature4": "Technical Support"
+        },
+        "action": "Subscribe Now"
+      },
+      "standard": {
+        "title": "Standard Plan",
+        "desc": "We provide professional and distinguished web development services to our customers to achieve their goals and meet their needs",
+        "price": "2500",
+        "oldPrice": "2000",
+        "saving": "20",
+        "save": "Save",
+        "currency": "SAR",
+        "features": {
+          "feature1": "Responsive Design",
+          "feature2": "Website",
+          "feature3": "Mobile App",
+          "feature4": "Hosting",
+          "feature5": "Digital Marketing",
+          "feature6": "Technical Support"
+        },
+        "action": "Subscribe Now"
+      },
+      "premium": {
+        "title": "Premium Plan",
+        "desc": "We provide professional and distinguished web development services to our customers to achieve their goals and meet their needs",
+        "price": "3000",
+        "oldPrice": "4000",
+        "saving": "25",
+        "save": "Save",
+        "currency": "SAR",
+        "features": {
+          "feature1": "Responsive Design",
+          "feature2": "Website",
+          "feature3": "Mobile App",
+          "feature4": "Hosting",
+          "feature5": "Domain",
+          "feature6": "Marketing Campaigns",
+          "feature7": "Digital Marketing",
+          "feature8": "Technical Support"
+        },
+        "action": "Subscribe Now"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "name": "Innova Tech",
+    "desc": "We are a team of professional designers and developers who are passionate about what we do and are always ready to provide the best services to our customers",
+    "title2": "Why Choose Us?",
+    "desc2": "We are distinguished in the field of design and development with innovative solutions that we provide to make our projects of the highest degree of efficiency and quality",
+    "title3": "Our Mission",
+    "desc3": "We provide our customers with the best services in the field of design and development of websites, mobile applications and electronic stores",
+    "clients-title": "What our clients say"
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "desc": "We have designed and developed many projects for our customers, and we are proud of the results we have achieved",
+    "tab": {
+      "all": "All",
+      "web": "Web Sites",
+      "mobile": "Mobile Apps",
+      "design": "Design"
+    }
+  },
+  "project_card": {
+    "view-project": "View Project",
+    "downloads": "Downloads",
+    "region": "Region",
+    "platforms": "Platforms",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Looking for a specific service?",
+    "desc": "Contact us and tell us about your project and we will provide you with the best solutions",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "action": "Send Message",
+    "web": "Web Development",
+    "mobile": "Mobile Development",
+    "commerce": "E-Commerce"
+  },
+  "meta": {
+    "title": "Innova Tech",
+    "description": "We are a team of professional designers and developers who are passionate about what we do and are always ready to provide the best services to our customers",
+    "keywords": [
+      "web development",
+      "mobile development",
+      "e-commerce",
+      "design",
+      "marketing"
+    ],
+    "about": "About us",
+    "contact": "Contact us",
+    "services": "Services",
+    "portfolio": "Portfolio"
+  }
+}
