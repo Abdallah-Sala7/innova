@@ -32,7 +32,7 @@ export default function LanguageChanger() {
         <SelectValue placeholder={locale} />
       </SelectTrigger>
 
-      <SelectContent>
+      <SelectContent className="bg-opacity-100 bg-white">
         <SelectItem value="en">EN</SelectItem>
         <SelectItem value="ar">AR</SelectItem>
       </SelectContent>
