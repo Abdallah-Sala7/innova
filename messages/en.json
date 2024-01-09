@@ -71,6 +71,10 @@
         "commerce": {
           "title": "E-Commerce",
           "desc": "We provide professional and distinguished e-commerce services to our customers to achieve their goals and meet their needs"
+        },
+        "marketing": {
+          "title": "Digital Marketing",
+          "desc": "We provide professional and distinguished marketing services to our customers to achieve their goals and meet their needs"
         }
       }
     },
@@ -192,7 +196,7 @@
     "commerce": "E-Commerce"
   },
   "meta": {
-    "title": "Innova Tech",
+    "title": "InnovaTech",
     "description": "We are a team of professional designers and developers who are passionate about what we do and are always ready to provide the best services to our customers",
     "keywords": {
       "0": "web development",

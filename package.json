@@ -9,14 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.0.0",
     "aos": "^2.3.4",
-    "lucide-react": "^0.301.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "gsap": "^3.12.4",
+    "lucide-react": "^0.307.0",
     "next": "14.0.4",
     "next-intl": "^3.4.0",
     "nextjs13-progress": "^1.1.45",
     "react": "^18",
     "react-dom": "^18",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

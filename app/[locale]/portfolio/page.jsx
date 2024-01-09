@@ -1,4 +1,5 @@
 import PortfolioCard from "@/app/components/PortfolioCard";
+import CustomHeader from "@/app/components/common/CustomHeader";
 import CustomTab from "@/app/components/common/CustomTab";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -10,7 +11,6 @@ export async function generateMetadata() {
     title: t("portfolio"),
   };
 }
-
 
 const PortfolioPage = ({ searchParams }) => {
   const t = useTranslations("portfolio");
@@ -38,43 +38,41 @@ const PortfolioPage = ({ searchParams }) => {
   ];
 
   return (
-    <section className="section-style">
-      <div className="container">
-        <div className="main-title" data-aos="fade-right">
-          <h1 className="title">{t("title")}</h1>
+    <>
+      <CustomHeader title={t("title")} desc={t("desc")} />
 
-          <p className="desc">{t("desc")}</p>
-        </div>
+      <section className="section-style">
+        <div className="container">
+          <CustomTab items={tabItems} tab={"tab"} />
 
-        <CustomTab items={tabItems} tab={"tab"} />
-
-        <div className="min-h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {activeTab === "0" ? (
-              <>
+          <div className="min-h-screen">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {activeTab === "0" ? (
+                <>
+                  <PortfolioCard />
+                  <PortfolioCard />
+                  <PortfolioCard />
+                  <PortfolioCard />
+                </>
+              ) : activeTab === "1" ? (
+                <>
+                  <PortfolioCard />
+                  <PortfolioCard />
+                </>
+              ) : activeTab === "2" ? (
+                <>
+                  <PortfolioCard />
+                  <PortfolioCard />
+                  <PortfolioCard />
+                </>
+              ) : (
                 <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-              </>
-            ) : activeTab === "1" ? (
-              <>
-                <PortfolioCard />
-                <PortfolioCard />
-              </>
-            ) : activeTab === "2" ? (
-              <>
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-              </>
-            ) : (
-              <PortfolioCard />
-            )}
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

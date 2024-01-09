@@ -31,41 +31,31 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="fixed top-0 left-0 z-40 w-full py-2 h-nav shadow-sm bg-dark">
+    <nav className="fixed top-0 left-0 z-40 w-full py-2 h-nav shadow-sm bg-white">
       <div className="container h-full">
         <div className=" h-full flex items-center justify-between">
-          <Link href="/" className="h-12 w-1h-12 flex">
+          <Link href="/" className="flex">
             <Image
               src={"/images/logo.png"}
               alt="logo"
-              width={48}
+              width={160}
               height={48}
-              className="w-full h-full object-contain"
+              className="h-12 w-auto  object-contain"
             />
           </Link>
 
           <div className="flex items-center gap-4">
             <ul
               className={`
-          fixed top-0 left-0 z-50 bg-dark max-w-full w-72 h-full p-5
-          flex flex-col items-center gap-4 transition-transform
+          fixed top-0 left-0 z-50 max-w-full w-72 h-full p-5
+          flex flex-col items-center gap-4 transition-transform bg-white
           md:flex-row md:static md:w-auto md:p-0 md:gap-2
           ${showMenu ? "translate-x-0" : " -translate-x-full md:-translate-x-0"}
         `}
             >
               <li className="w-full flex items-center justify-between md:hidden">
-                <Link href="/" className="h-10 w-10 flex">
-                  <Image
-                    src={"/images/logo.png"}
-                    alt="logo"
-                    width={20}
-                    height={20}
-                    className="w-full h-full object-contain"
-                  />
-                </Link>
-
                 <button
-                  className="w-8 h-8 text-2xl flex items-center justify-center bg-primary rounded-sm text-dark hover:bg-opacity-80"
+                  className="w-8 h-8 text-2xl flex items-center justify-center bg-clr2 rounded-sm text-white hover:bg-opacity-80"
                   onClick={handleOpenMenu}
                 >
                   <X />
@@ -99,15 +89,15 @@ const Navbar = () => {
               onClick={handleOpenMenu}
               className="w-8 gap-1.5 justify-between flex flex-wrap md:hidden"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-clr2"></span>
             </button>
           </div>
         </div>

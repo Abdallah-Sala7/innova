@@ -1,3 +1,4 @@
+import CustomHeader from "@/app/components/common/CustomHeader";
 import PlansContent from "@/app/components/services/PlansContent";
 import ServicesCard from "@/app/components/services/ServicesCard";
 import { useTranslations } from "next-intl";
@@ -10,7 +11,6 @@ export async function generateMetadata() {
     title: t("services"),
   };
 }
-
 
 const ServicesPage = () => {
   const t = useTranslations("home");
@@ -50,14 +50,10 @@ const ServicesPage = () => {
 
   return (
     <>
+      <CustomHeader title={t("services.title")} desc={t("services.desc")} />
+
       <section className="section-style">
         <div className="container">
-          <div className="main-title" data-aos="fade-right">
-            <h1 className="title">{t("services.title")}</h1>
-
-            <p className="desc">{t("services.desc")}</p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {servicesItems.map((item, index) => (
               <ServicesCard
@@ -71,7 +67,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      <section className="section-style">
+      {/* <section className="section-style">
         <div className="container">
           <div className="main-title" data-aos="fade-right">
             <h1 className="title">{t("plans.title")}</h1>
@@ -81,7 +77,7 @@ const ServicesPage = () => {
 
           <PlansContent />
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

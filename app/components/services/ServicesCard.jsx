@@ -5,7 +5,7 @@ const ServicesCard = ({servicesImg, desc, title}) => {
   return (
     <a
       href="#"
-      className="relative border border-blue-50 rounded-lg bg-primary bg-opacity-10 py-5 px-4 transition-colors hover:bg-opacity-20 group"
+      className="relative border border-clr2 rounded-lg bg-clr2 bg-opacity-5 py-5 px-4 transition-colors hover:bg-opacity-10 group"
       data-aos="fade-up"
     >
       <div className="mb-4">

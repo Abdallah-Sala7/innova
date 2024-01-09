@@ -28,9 +28,9 @@ const CustomTab = ({ items, tab }) => {
         <button
           key={idx}
           onClick={() => handleTab(item.key)}
-          className={`px-5 py-2 rounded-full text-dark border border-dark hover:bg-dark hover:text-white transition-colors duration-500 ${
+          className={`px-5 py-2 rounded-full text-clr2 border border-clr2 hover:bg-clr2 hover:text-white transition-colors duration-500 ${
             (selectedTab === item.key || (!selectedTab && item.isActive)) &&
-            "bg-dark text-white"
+            "bg-clr2 text-white"
           }`}
         >
           {item.icon && item.icon}

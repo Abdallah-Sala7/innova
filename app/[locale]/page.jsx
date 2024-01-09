@@ -4,7 +4,8 @@ import ToolsCard from "@/app/components/ToolsCard";
 import ServicesCard from "@/app/components/services/ServicesCard";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import PlansContent from "../components/services/PlansContent";
+import AnimatedBg from "../components/common/AnimatedBg";
+import HomeServices from "../components/home-services/HomeServices";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -63,7 +64,7 @@ export default function Home() {
               <div className="main-title text-center md:text-start">
                 <h1 className="title" data-aos="fade-right">
                   {t("hero.title")}
-                  <span className="text-transparent from-dark to-primary bg-gradient-to-br bg-clip-text inline-block">
+                  <span className="text-clr2 inline-block">
                     {t("hero.title-highlight")}
                   </span>
                 </h1>
@@ -77,7 +78,7 @@ export default function Home() {
                 href="#"
                 data-aos="fade-right"
                 data-aos-delay="600"
-                className={"custom-btn"}
+                className={"custom-btn !bg-clr2 !text-white !rounded-full"}
               >
                 {t("hero.action")}
               </a>
@@ -85,13 +86,15 @@ export default function Home() {
 
             <div className="w-full md:flex-1" data-aos="fade-up">
               <Image
-                src={"/images/hero.svg"}
+                src={"/images/saudi-bg.png"}
                 alt="Hero Image"
                 width={500}
                 height={500}
                 className="w-full h-auto object-contain"
               />
             </div>
+
+            <AnimatedBg />
           </div>
         </div>
       </header>
@@ -117,6 +120,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <HomeServices />
 
       <section className="section-style">
         <div className="container">
@@ -150,18 +155,6 @@ export default function Home() {
           <ProjectCard img={"/images/project_img.webp"} />
           <ProjectCard img={"/images/project2_img.webp"} right />
           <ProjectCard img={"/images/project_img.webp"} />
-        </div>
-      </section>
-
-      <section className="section-style">
-        <div className="container">
-          <div className="main-title center mx-auto" data-aos="fade-right">
-            <h1 className="title">{t("plans.title")}</h1>
-
-            <p className="desc">{t("plans.desc")}</p>
-          </div>
-
-          <PlansContent />
         </div>
       </section>
 
@@ -298,6 +291,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
     </>
   );
 }

@@ -12,7 +12,7 @@ const ServicesSelect = () => {
     <div className="flex gap-3 flex-wrap" data-aos="fade-up">
       <button
         className={`w-40 flex-auto flex flex-col items-center gap-4 py-10 px-4 rounded-md border
-        ${selected === "web" ? "border-primary" : "border-gray-200"}`}
+        ${selected === "web" ? "border-clr2" : "border-gray-200"}`}
         onClick={() => setSelected("web")}
       >
         <Image
@@ -31,7 +31,7 @@ const ServicesSelect = () => {
 
       <button
         className={`w-40 flex-auto flex flex-col items-center gap-4 py-10 px-4 rounded-md border
-        ${selected === "mobile" ? "border-primary" : "border-gray-200"}`}
+        ${selected === "mobile" ? "border-clr2" : "border-gray-200"}`}
         onClick={() => setSelected("mobile")}
       >
         <Image
@@ -50,7 +50,7 @@ const ServicesSelect = () => {
 
       <button
         className={`w-40 flex-auto flex flex-col items-center gap-4 py-10 px-4 rounded-md border
-        ${selected === "commerce" ? "border-primary" : "border-gray-200"}`}
+        ${selected === "commerce" ? "border-clr2" : "border-gray-200"}`}
         onClick={() => setSelected("commerce")}
       >
         <Image
