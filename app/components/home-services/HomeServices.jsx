@@ -35,7 +35,7 @@ const HomeServices = () => {
 
       mm.add("(min-width: 650px)", () => {
         ScrollTrigger.create({
-          trigger: ".gallery",
+          trigger: gallery,
           start: "top top",
           end: "bottom bottom",
           pin: ".right",

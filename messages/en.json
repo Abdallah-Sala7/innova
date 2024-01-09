@@ -6,7 +6,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "footer": {
-      "title": "Innova Tech",
+      "title": "InnovaTech",
       "description": "We are distinguished in the field of design and development with innovative solutions that we provide to make our projects of the highest degree of efficiency and quality",
       "links": {
         "title": "Quick Links",
@@ -154,17 +154,25 @@
         },
         "action": "Subscribe Now"
       }
+    },
+    "clients": {
+      "title": "What our clients say ?",
+      "desc": "We are proud of the results we have achieved and the satisfaction of our customers with our services"
     }
   },
   "about": {
     "title": "About Us",
-    "name": "Innova Tech",
+    "name": "InnovaTech",
     "desc": "We are a team of professional designers and developers who are passionate about what we do and are always ready to provide the best services to our customers",
     "title2": "Why Choose Us?",
     "desc2": "We are distinguished in the field of design and development with innovative solutions that we provide to make our projects of the highest degree of efficiency and quality",
     "title3": "Our Mission",
     "desc3": "We provide our customers with the best services in the field of design and development of websites, mobile applications and electronic stores",
-    "clients-title": "What our clients say"
+    "clients-title": "What our clients say",
+    "clients": "Happy Clients",
+    "projects": "Projects",
+    "employees": "Employees",
+    "products": "Products"
   },
   "portfolio": {
     "title": "Our Portfolio",

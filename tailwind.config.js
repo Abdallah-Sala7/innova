@@ -44,6 +44,11 @@ module.exports = {
       padding: {
         nav: "75px",
       },
+      animation: {
+        "fade-in": "fadeIn 1s ease-in-out",
+        "spin-slow": "spin 3s linear infinite",
+        "bounce-slow": "bounce 3s infinite",
+      },
     },
   },
   plugins: [],

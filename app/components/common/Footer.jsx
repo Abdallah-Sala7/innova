@@ -209,7 +209,7 @@ const Footer = () => {
                 href="https://www.facebook.com/mumat"
                 target="_blank"
                 title="Facebook"
-                className="flex items-center justify-center text-primary border border-primary w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-clr2"
+                className="flex items-center justify-center text-white border border-white w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-white hover:border-primary"
               >
                 <Facebook size={20} />
               </a>
@@ -217,7 +217,7 @@ const Footer = () => {
                 href="https://www.twitter.com/mumat"
                 target="_blank"
                 title="Twitter"
-                className="flex items-center justify-center text-primary border border-primary w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-clr2"
+                className="flex items-center justify-center text-white border border-white w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-white hover:border-primary"
               >
                 <X size={20} />
               </a>
@@ -225,7 +225,7 @@ const Footer = () => {
                 href="https://www.instagram.com/mumat"
                 target="_blank"
                 title="Instagram"
-                className="flex items-center justify-center text-primary border border-primary w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-clr2"
+                className="flex items-center justify-center text-white border border-white w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-white hover:border-primary"
               >
                 <Instagram size={20} />
               </a>
@@ -233,7 +233,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/mumat"
                 target="_blank"
                 title="Linkedin"
-                className="flex items-center justify-center text-primary border border-primary w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-clr2"
+                className="flex items-center justify-center text-white border border-white w-8 h-8 rounded-full duration-300 transition-all hover:bg-primary hover:text-white hover:border-primary"
               >
                 <Linkedin size={20} />
               </a>

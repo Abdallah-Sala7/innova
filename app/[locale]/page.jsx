@@ -6,6 +6,8 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import AnimatedBg from "../components/common/AnimatedBg";
 import HomeServices from "../components/home-services/HomeServices";
+import Analysis from "../components/common/Analysis";
+import AboutSlider from "../components/about/AboutSlider";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -34,24 +36,6 @@ export default function Home() {
       color: "bg-primary bg-opacity-10",
       title: t("features.cards.support.title"),
       desc: t("features.cards.support.desc"),
-    },
-  ];
-
-  const servicesItems = [
-    {
-      title: t("services.cards.web.title"),
-      desc: t("services.cards.web.desc"),
-      img: "/images/web-dev.png",
-    },
-    {
-      title: t("services.cards.mobile.title"),
-      desc: t("services.cards.mobile.desc"),
-      img: "/images/mobile-app.png",
-    },
-    {
-      title: t("services.cards.commerce.title"),
-      desc: t("services.cards.commerce.desc"),
-      img: "/images/online-shop.png",
     },
   ];
 
@@ -123,7 +107,7 @@ export default function Home() {
 
       <HomeServices />
 
-      <section className="section-style">
+      {/* <section className="section-style">
         <div className="container">
           <div className="main-title center mx-auto" data-aos="zoom-in">
             <h1 className="title">{t("services.title")}</h1>
@@ -142,7 +126,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="section-style">
         <div className="container">
@@ -205,6 +189,20 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      <Analysis />
+
+      <section className="section-style">
+        <div className="container">
+          <div className="main-title center mx-auto" data-aos="zoom-in">
+            <h1 className="title">{t("clients.title")}</h1>
+
+            <p className="desc">{t("clients.desc")}</p>
+          </div>
+
+          <AboutSlider />
         </div>
       </section>
 
@@ -291,7 +289,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
     </>
   );
 }
