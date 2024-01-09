@@ -5,9 +5,7 @@ import "swiper/css/scrollbar";
 
 import "../globals.css";
 
-import { 
-  Rubik
- } from "next/font/google";
+import { Cairo } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { Next13NProgress } from "nextjs13-progress";
@@ -18,10 +16,10 @@ import { AOSInit } from "../components/common/AOSInit";
 import Whatsapp from "../components/Whatsapp";
 import { getTranslations } from "next-intl/server";
 
-const cairo = Rubik({
+const cairo = Cairo({
   display: "swap",
   subsets: ["arabic", "latin"],
-  weight: "400",
+  weight: "400"
 });
 
 export async function generateMetadata() {
