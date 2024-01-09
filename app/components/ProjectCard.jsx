@@ -25,7 +25,9 @@ const ProjectCard = ({ right, img }) => {
       </div>
 
       <div
-        className={`from-dark to-blue-900 bg-gradient-to-br text-white rounded-xl p-6 md:py-7 md:px-8 xl:flex-1`}
+        className={`relative z-10 from-clr2 bg-clr2 to-primary bg-gradient-to-br text-white rounded-xl p-6 md:py-7 md:px-8 xl:flex-1 overflow-hidden
+         after:bg-clr2 after:absolute after:inset-0 after:-z-10 after:opacity-70
+        `}
       >
         <h1 className="text-title-3 font-bold text-primary capitalize mb-2">
           project one
@@ -66,10 +68,7 @@ const ProjectCard = ({ right, img }) => {
           </div>
         </div>
 
-        <a
-          href="#"
-          className="custom-btn-secondary"
-        >
+        <a href="#" className="custom-btn-secondary">
           <span>{t("view-project")}</span>
 
           <ArrowLeft className="ltr:rotate-180" />

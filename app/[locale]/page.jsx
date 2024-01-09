@@ -39,6 +39,24 @@ export default function Home() {
     },
   ];
 
+  const servicesItems = [
+    {
+      title: t("services.cards.web.title"),
+      desc: t("services.cards.web.desc"),
+      img: "/images/web-dev.png",
+    },
+    {
+      title: t("services.cards.mobile.title"),
+      desc: t("services.cards.mobile.desc"),
+      img: "/images/mobile-app.png",
+    },
+    {
+      title: t("services.cards.commerce.title"),
+      desc: t("services.cards.commerce.desc"),
+      img: "/images/online-shop.png",
+    },
+  ];
+
   return (
     <>
       <header className="section-style">
@@ -105,9 +123,9 @@ export default function Home() {
         </div>
       </section>
 
-      <HomeServices />
+      {/* <HomeServices /> */}
 
-      {/* <section className="section-style">
+      <section className="section-style">
         <div className="container">
           <div className="main-title center mx-auto" data-aos="zoom-in">
             <h1 className="title">{t("services.title")}</h1>
@@ -126,7 +144,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className="section-style">
         <div className="container">

@@ -171,7 +171,7 @@
 
   .custom-btn-secondary {
     @apply relative z-10 w-fit flex items-center gap-1 rounded-md border border-primary px-4 py-2 overflow-hidden 
-    text-title-7 text-primary transition-colors font-bold hover:text-dark
+    text-title-7 text-primary transition-colors font-bold hover:text-white
     after:absolute after:-z-10 after:top-1/2 after:left-1/2 after:transition-all after:duration-300 after:-translate-x-1/2 after:-translate-y-1/2 after:w-0 after:h-0 after:rounded-full after:bg-primary hover:after:w-96 hover:after:h-96;
   }
 }
