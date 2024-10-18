@@ -15,7 +15,7 @@
     "clsx": "^2.1.0",
     "gsap": "^3.12.4",
     "lucide-react": "^0.307.0",
-    "next": "14.0.4",
+    "next": "^14.2.15",
     "next-intl": "^3.4.0",
     "nextjs13-progress": "^1.1.45",
     "react": "^18",

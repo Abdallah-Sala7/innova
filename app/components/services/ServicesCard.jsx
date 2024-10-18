@@ -1,38 +1,38 @@
-import Image from 'next/image';
-import React from 'react'
+import React from "react";
 
-const ServicesCard = ({servicesImg, desc, title}) => {
+const ServicesCard = ({ icon, desc, title , iconStyle}) => {
   return (
-    <a
-      href="#"
-      className="relative border border-clr2 rounded-lg bg-clr2 bg-opacity-5 py-5 px-4 transition-colors hover:bg-opacity-10 group"
-      data-aos="fade-up"
-    >
-      <div className="mb-4">
-        <Image
-          src={servicesImg}
-          alt={title}
-          width={500}
-          height={500}
-          className="w-16 h-16 object-contain"
-        />
+    <div className="relative group mt-8" data-aos="fade-up">
+      <div
+        className={`absolute top-0 -translate-y-1/2 start-4 z-10 w-16 h-16 flex justify-center items-center ${iconStyle}`}
+        style={{
+          clipPath: "polygon(0% 0%, 100% 0, 100% 70%, 75%  100%, 0% 100%)",
+        }}
+      >
+        {icon}
       </div>
 
-      <h2 className="text-title-6 font-bold text-dark capitalize mb-2">{title}</h2>
+      <div
+        className="p-0.5 bg-gray-100"
+        style={{
+          clipPath: "polygon(0% 0%, 100% 0, 100% 80%, 85%  100%, 0% 100%)",
+        }}
+      >
+        <div
+          className="py-12 px-8 bg-white"
+          style={{
+            clipPath: "polygon(0% 0%, 100% 0, 100% 80.2%, 85.2% 100%, 0% 100%)",
+          }}
+        >
+          <h2 className="text-2xl font-bold text-dark capitalize mb-2">
+            {title}
+          </h2>
 
-      <p className="text-title-16 line-clamp-3">{desc}</p>
-
-      <div className="absolute top-4 end-4 opacity-20 scale-0 transition-transform duration-300 group-hover:scale-100">
-        <Image
-          src={servicesImg}
-          alt={title}
-          width={500}
-          height={500}
-          className="w-24 h-24 object-contain"
-        />
+          <p className="line-clamp-3 text-gray-500 text-lg">{desc}</p>
+        </div>
       </div>
-    </a>
+    </div>
   );
-}
+};
 
-export default ServicesCard
+export default ServicesCard;

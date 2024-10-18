@@ -19,7 +19,7 @@ import { getTranslations } from "next-intl/server";
 const cairo = Cairo({
   display: "swap",
   subsets: ["arabic", "latin"],
-  weight: "400"
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export async function generateMetadata() {

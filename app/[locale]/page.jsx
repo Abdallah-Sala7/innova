@@ -5,37 +5,38 @@ import ServicesCard from "@/app/components/services/ServicesCard";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import AnimatedBg from "../components/common/AnimatedBg";
-import HomeServices from "../components/home-services/HomeServices";
-import Analysis from "../components/common/Analysis";
 import AboutSlider from "../components/about/AboutSlider";
+import {
+  MonitorSmartphoneIcon,
+  ShoppingBasketIcon,
+  SmartphoneChargingIcon,
+  ShieldCheckIcon,
+  GaugeCircleIcon,
+  LightbulbIcon,
+  HeadphonesIcon,
+} from "lucide-react";
 
 export default function Home() {
   const t = useTranslations("home");
 
   const featuresItems = [
     {
-      img: "/images/security.png",
-      color: "bg-clr2 bg-opacity-20",
+      icon: <ShieldCheckIcon size={28} />,
       title: t("features.cards.security.title"),
       desc: t("features.cards.security.desc"),
+      iconStyle: "bg-cyan-50 text-cyan-500",
     },
     {
-      img: "/images/deadline.png",
-      color: "bg-clr2 bg-opacity-10",
+      icon: <GaugeCircleIcon size={28} />,
       title: t("features.cards.speed.title"),
       desc: t("features.cards.speed.desc"),
+      iconStyle: "bg-pink-50 text-pink-500",
     },
     {
-      img: "/images/idea.png",
-      color: "bg-primary bg-opacity-20",
+      icon: <LightbulbIcon size={28} />,
       title: t("features.cards.innovative.title"),
       desc: t("features.cards.innovative.desc"),
-    },
-    {
-      img: "/images/technical-support.png",
-      color: "bg-primary bg-opacity-10",
-      title: t("features.cards.support.title"),
-      desc: t("features.cards.support.desc"),
+      iconStyle: "bg-amber-50 text-amber-500",
     },
   ];
 
@@ -43,17 +44,20 @@ export default function Home() {
     {
       title: t("services.cards.web.title"),
       desc: t("services.cards.web.desc"),
-      img: "/images/web-dev.png",
+      icon: <MonitorSmartphoneIcon size={32} />,
+      iconStyle: "bg-cyan-50 text-cyan-500",
     },
     {
       title: t("services.cards.mobile.title"),
       desc: t("services.cards.mobile.desc"),
-      img: "/images/mobile-app.png",
+      icon: <SmartphoneChargingIcon size={32} />,
+      iconStyle: "bg-purple-50 text-purple-500",
     },
     {
       title: t("services.cards.commerce.title"),
       desc: t("services.cards.commerce.desc"),
-      img: "/images/online-shop.png",
+      icon: <ShoppingBasketIcon size={32} />,
+      iconStyle: "bg-indigo-50 text-indigo-500",
     },
   ];
 
@@ -109,14 +113,15 @@ export default function Home() {
             <p className="desc">{t("features.desc")}</p>
           </div>
 
-          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {featuresItems.map((item, index) => (
               <FeaturesCard
                 key={index}
-                img={item.img}
+                icon={item.icon}
                 color={item.color}
                 title={item.title}
                 desc={item.desc}
+                iconStyle={item.iconStyle}
               />
             ))}
           </div>
@@ -133,13 +138,14 @@ export default function Home() {
             <p className="desc">{t("services.desc")}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {servicesItems.map((item, index) => (
               <ServicesCard
                 key={index}
                 title={item.title}
                 desc={item.desc}
-                servicesImg={item.img}
+                icon={item.icon}
+                iconStyle={item.iconStyle}
               />
             ))}
           </div>
@@ -210,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Analysis />
+      {/* <Analysis /> */}
 
       <section className="section-style">
         <div className="container">
